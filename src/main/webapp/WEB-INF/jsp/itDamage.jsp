@@ -32,14 +32,14 @@
 
 							<c:forEach items="${List}" var="List" varStatus="loop"> 
 								<tr align="left">
-									<td class="genre">${List.gsgubn}</td>
-									<td class="genre">${List.jteam}</td>
-									<td class="genre">${List.jname}</td>
-									<td class="longlen"><a href="tel:${List.jtel}">${List.jtel}</a></td>
-									<td>${List.jtxt}</td> 
+									<td class="genre">${List.class1}</td>
+									<td class="genre">${List.rteam}</td>
+									<td class="genre">${List.rname}</td>
+									<td class="longlen"><a href="tel:${List.rtel}">${List.rtel}</a></td>
+									<td>${List.rtxt}</td> 
 									<td class="genre"><button class="btn btn-default btn-sm"
 														type="button" id="endDamage"
-														onClick="location.href='/endDamage?gsgubn=${List.gsgubn}&jtime=${List.jtime}';  ">완료</button>
+														onClick="location.href='/endDamage?class1=${List.class1}&rtime=${List.rtime}';  ">완료</button>
 														</td>
 								</tr> 
 							</c:forEach>
