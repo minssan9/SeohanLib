@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.baron.bm.service.BoardService;
 import com.baron.member.model.BoardModel;
-import com.baron.member.service.BoardService;
 
 @SessionAttributes({ "kname", "jikb", "team_nm", "permission", "id",
 		"chief", "chiefId", "adminMode" })

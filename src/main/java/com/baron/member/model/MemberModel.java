@@ -1,7 +1,5 @@
 package com.baron.member.model;
 
-import java.sql.Date;
-
 import org.hibernate.validator.constraints.NotBlank;
 
 public class MemberModel {

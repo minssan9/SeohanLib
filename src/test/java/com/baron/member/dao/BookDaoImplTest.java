@@ -22,9 +22,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.baron.bm.service.RequestService;
+import com.baron.bm.service.XmlDom;
 import com.baron.member.model.BookModel;
-import com.baron.member.service.RequestService;
-import com.baron.member.service.XmlDom;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/applicationContext.xml")
