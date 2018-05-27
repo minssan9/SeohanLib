@@ -1,57 +1,57 @@
 package com.baron.member.model;
 
 public class ItDamage {
-	private String class1;
-	private String rtime;
-	private String rsabun;
-	private String rteam;
-	private String rname;
-	private String rtel;
-	private String rtxt;
+	private String gsgubn;
+	private String jtime;
+	private String jsabun;
+	private String jteam;
+	private String jname;
+	private String jtel;
+	private String jtxt;
 	private String ctxt;
 	private String ctime;
-	public String getClass1() {
-		return class1;
+	public String getGsgubn() {
+		return gsgubn;
 	}
-	public void setClass1(String class1) {
-		this.class1 = class1;
+	public void setGsgubn(String gsgubn) {
+		this.gsgubn = gsgubn;
 	}
-	public String getRtime() {
-		return rtime;
+	public String getJtime() {
+		return jtime;
 	}
-	public void setRtime(String rtime) {
-		this.rtime = rtime;
+	public void setJtime(String jtime) {
+		this.jtime = jtime;
 	}
-	public String getRsabun() {
-		return rsabun;
+	public String getJsabun() {
+		return jsabun;
 	}
-	public void setRsabun(String rsabun) {
-		this.rsabun = rsabun;
+	public void setJsabun(String jsabun) {
+		this.jsabun = jsabun;
 	}
-	public String getRteam() {
-		return rteam;
+	public String getJteam() {
+		return jteam;
 	}
-	public void setRteam(String rteam) {
-		this.rteam = rteam;
+	public void setJteam(String jteam) {
+		this.jteam = jteam;
 	}
-	public String getRname() {
-		return rname;
+	public String getJname() {
+		return jname;
 	}
-	public void setRname(String rname) {
-		this.rname = rname;
+	public void setJname(String jname) {
+		this.jname = jname;
 	}
-	public String getRtel() {
-		return rtel;
+	public String getJtel() {
+		return jtel;
 	}
-	public void setRtel(String rtel) {
-		this.rtel = rtel;
+	public void setJtel(String jtel) {
+		this.jtel = jtel;
 	}
-	public String getRtxt() {
-		return rtxt;
+	public String getJtxt() {
+		return jtxt;
 	}
-	public void setRtxt(String rtxt) {
-		this.rtxt = rtxt;
-	} 
+	public void setJtxt(String jtxt) {
+		this.jtxt = jtxt;
+	}
 	public String getCtxt() {
 		return ctxt;
 	}
