@@ -23,18 +23,18 @@
 	</select>
 	
 	<select id="selectItDamage" resultType="ItDamage"> 
-		SELECT * FROM SITLIB.IT_DAMAGE WHERE CTIME = '' order by JTIME DESC
+		SELECT * FROM SITLIB.IT_DAMAGE WHERE CLASS2='EQUIP' and stat = '01' order by rTIME DESC
 	</select>
 	
 	<update id="endDamage" parameterType="ItDamage">
 		UPDATE SITLIB.IT_MST_HIS2 SET
 		ctime = ${ctime} 
-		WHERE jtime = #{jtime}
+		WHERE jtime = #{rtime}
 	</update>		
 	<update id="endDamage2" parameterType="ItDamage">
 		UPDATE SITLIB.IT_DAMAGE 
-		SET ctime = ${ctime} 
-		WHERE jtime = #{jtime}
+		SET ctime = ${ctime} , stat = '09' 
+		WHERE rtime = #{rtime}
 	</update>
 
 	<select id="copyDate" resultType="BookModel">
