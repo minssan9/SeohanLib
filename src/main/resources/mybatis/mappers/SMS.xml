@@ -12,7 +12,6 @@
 		VALUES(GETDATE(), '0', '0', #{phone},
 		'031-8047-4328',
 		'[ '+ #{title} + ' ]의 대여요청이 승인되었습니다' )
-
 	</insert>
 
 	<insert id="notifiReser" parameterType="SmsModel">
@@ -74,8 +73,18 @@
 		TR_MSG)
 		VALUES(GETDATE(), '0', '0', #{phone},
 		'031-8047-4328',
-		'[ ' + #{title} + ' ] 도서가 연장되었습니다.' )
-
-
+		'[ ' + #{title} + ' ] 도서가 연장되었습니다.' ) 
+	</insert>
+	
+	<insert id="sendSms" parameterType="SmsModel">
+		INSERT INTO
+		SC_TRAN
+		(TR_SENDDATE , TR_SENDSTAT ,TR_MSGTYPE
+		,TR_PHONE
+		,TR_CALLBACK ,
+		TR_MSG)
+		VALUES(GETDATE(), '0', '0', #{phone},
+		#{sendNo},
+		#{content} )
 	</insert>
 </mapper>

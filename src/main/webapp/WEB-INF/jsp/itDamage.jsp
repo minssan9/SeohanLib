@@ -39,7 +39,7 @@
 									<td>${List.rtxt}</td> 
 									<td class="genre"><button class="btn btn-default btn-sm"
 														type="button" id="endDamage"
-														onClick="location.href='/endDamage?co_gb=${List.co_gb}&rtime=${List.rtime}';  ">완료</button>
+														onClick="location.href='/endDamage?co_gb=${List.co_gb}&rtime=${List.rtime}&rtel=${List.rtel}&rtxt=${List.rtxt}';  ">완료</button>
 														</td>
 								</tr> 
 							</c:forEach>

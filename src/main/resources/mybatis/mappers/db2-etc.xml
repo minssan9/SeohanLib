@@ -23,7 +23,7 @@
 	</select>
 	
 	<select id="selectItDamage" resultType="ItDamage"> 
-		SELECT * FROM SITLIB.IT_DAMAGE WHERE CLASS2='EQUIP' and stat = '01' order by rTIME DESC
+		SELECT * FROM SITLIB.IT_DAMAGE WHERE  stat = '01' order by rTIME DESC
 	</select>
 	
 	<update id="endDamage" parameterType="ItDamage">

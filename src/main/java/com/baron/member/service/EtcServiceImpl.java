@@ -8,7 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.baron.member.dao.EtcDao;
+import com.baron.member.dao.SmsDao;
+import com.baron.member.dao.SmsDaoImpl;
 import com.baron.member.model.ItDamage;
+import com.baron.member.model.SmsModel;
 
 @Service
 public class EtcServiceImpl implements EtcService {
@@ -16,6 +19,8 @@ public class EtcServiceImpl implements EtcService {
 
 	@Autowired
 	private EtcDao etcdao;
+	@Autowired
+	private SmsDao smsdao;
 
 	@Override
 	public List<String> dinnerList(String nowDate) {
@@ -43,10 +48,15 @@ public class EtcServiceImpl implements EtcService {
 	@Override
 	public void endDamage(ItDamage itDamage) { 
 		Calendar cal = Calendar.getInstance();
-		String nowDate = sdf.format(cal.getTime());
-		 
+		String nowDate = sdf.format(cal.getTime());		 
+		SmsModel smsModel = new SmsModel();
 		itDamage.setCtime(nowDate);
-		 etcdao.endDamage(itDamage);		
+		smsModel.setContent(itDamage.getRtxt() + " - 조치 완료 / 확인 후 미조치사항 전산팀 연락 바람");
+		smsModel.setPhone(itDamage.getRtel());
+		smsModel.setSendNo("043-530-3174");
+		
+		 etcdao.endDamage(itDamage);
+		 smsdao.sendSms(smsModel);		
 	}
 
 }

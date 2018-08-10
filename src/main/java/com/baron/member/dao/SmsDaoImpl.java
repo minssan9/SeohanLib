@@ -29,6 +29,9 @@ public class SmsDaoImpl implements SmsDao {
 	@Override
 	public void notifiReturn(SmsModel sms) {
 		smsSession.insert(NAMESPACE + "notifiReturn", sms);
-
+	}
+	@Override
+	public void sendSms(SmsModel sms) {
+		smsSession.insert(NAMESPACE + "sendSms", sms);
 	}
 }
