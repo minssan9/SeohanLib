@@ -40,7 +40,7 @@ import com.baron.member.model.Dto;
 import com.baron.member.model.MemberModel;
 import com.baron.member.model.SearchResult;
 
-@SessionAttributes({ "kname", "jikb", "team_nm", "permission", "id", "chief", "chiefId", "adminMode" })
+@SessionAttributes({"company", "kname", "jikb", "team_nm", "permission", "id", "chief", "chiefId", "adminMode" })
 @Controller
 public class MemberController {
 
@@ -160,12 +160,14 @@ public class MemberController {
 			mav.addObject("id", membermodel.getId());
 			adminchk = membermodel.getAdminChk();
 			
+			session.setAttribute("company", membermodel.getCo_gb());
 			session.setAttribute("id", membermodel.getId());
 			session.setAttribute("chief", membermodel.getChief());
 			session.setAttribute("chiefId", membermodel.getChiefid());
 			session.setAttribute("adminMode", "user"); 
 			 
 			if (adminchk.equals("Y")) {
+				response.addCookie(new Cookie("company", membermodel.getCo_gb()));
 				response.addCookie(new Cookie("bm_id", id));
 				response.addCookie(new Cookie("bm_permission", "1"));
 				session.setAttribute("adminMode", "admin"); 
@@ -175,6 +177,7 @@ public class MemberController {
 				System.out.println();
 				return mav;
 			} else {
+				response.addCookie(new Cookie("company", membermodel.getCo_gb()));
 				response.addCookie(new Cookie("bm_id", id));
 				response.addCookie(new Cookie("bm_permission", "0"));
 				mav.setViewName("redirect:index");
