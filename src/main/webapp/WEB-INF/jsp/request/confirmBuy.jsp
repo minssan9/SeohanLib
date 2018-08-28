@@ -81,7 +81,7 @@
 						class="form-control" id="author" name="author"
 						value="${book.author}">
 				</div>
-				 --%>
+				 --%><input type="hidden" name="company" value="${sessionScope.company}">
 					<input type="hidden" name="id" value="${book.id}"> <input
 						type="hidden" name="imageurl" value="${book.imageurl}"> <input
 						type="hidden" name="link" value="${book.link}"> <input

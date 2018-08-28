@@ -6,3 +6,5 @@ target/
 ### db Connection
 common.xml
 db.properties
+/.settings/
+/src/
