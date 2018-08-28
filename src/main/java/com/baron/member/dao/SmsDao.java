@@ -10,5 +10,5 @@ public interface SmsDao {
 
 	public void notifiReturn(SmsModel sms);
 
-	
+	public void sendSms(SmsModel sms);	
 }

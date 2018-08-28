@@ -32,14 +32,22 @@
 
 							<c:forEach items="${List}" var="List" varStatus="loop"> 
 								<tr align="left">
+<<<<<<< HEAD
 									<td class="genre">${List.class1}</td>
+=======
+									<td class="genre">${List.co_gb}</td>
+>>>>>>> develop
 									<td class="genre">${List.rteam}</td>
 									<td class="genre">${List.rname}</td>
 									<td class="longlen"><a href="tel:${List.rtel}">${List.rtel}</a></td>
 									<td>${List.rtxt}</td> 
 									<td class="genre"><button class="btn btn-default btn-sm"
 														type="button" id="endDamage"
+<<<<<<< HEAD
 														onClick="location.href='/endDamage?class1=${List.class1}&rtime=${List.rtime}';  ">완료</button>
+=======
+														onClick="location.href='/endDamage?co_gb=${List.co_gb}&rtime=${List.rtime}&rtel=${List.rtel}&rtxt=${List.rtxt}';  ">완료</button>
+>>>>>>> develop
 														</td>
 								</tr> 
 							</c:forEach>
