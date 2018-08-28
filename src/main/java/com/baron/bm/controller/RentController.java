@@ -20,14 +20,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.baron.bm.service.NotifiService;
+import com.baron.bm.service.RentService;
 import com.baron.member.dao.BookDao;
 import com.baron.member.dao.JoinDao;
 import com.baron.member.dao.RentDao;
 import com.baron.member.model.BookModel;
 import com.baron.member.model.MemberModel;
 import com.baron.member.model.SmsModel;
-import com.baron.member.service.NotifiService;
-import com.baron.member.service.RentService;
 
 @Controller
 public class RentController {

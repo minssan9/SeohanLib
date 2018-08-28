@@ -10,11 +10,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.baron.bm.service.BoardService;
+import com.baron.bm.service.StatisticService;
 import com.baron.member.model.BookModel;
 import com.baron.member.model.Dto;
 import com.baron.member.model.MemberModel;
-import com.baron.member.service.BoardService;
-import com.baron.member.service.StatisticService;
 
 @Controller
 public class StatisticController {

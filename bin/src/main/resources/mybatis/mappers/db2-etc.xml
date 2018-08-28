@@ -23,7 +23,15 @@
 	</select>
 	
 	<select id="selectItDamage" resultType="ItDamage"> 
+<<<<<<< HEAD
+<<<<<<< HEAD
+		SELECT * FROM SITLIB.IT_DAMAGE WHERE stat = '01' order by rtime DESC
+=======
 		SELECT * FROM SITLIB.IT_DAMAGE WHERE  stat = '01' order by rTIME DESC
+>>>>>>> develop
+=======
+		SELECT * FROM SITLIB.IT_DAMAGE WHERE stat = '01' order by RTIME DESC
+>>>>>>> hotfix
 	</select>
 	
 	<update id="endDamage" parameterType="ItDamage">
@@ -33,7 +41,15 @@
 	</update>		
 	<update id="endDamage2" parameterType="ItDamage">
 		UPDATE SITLIB.IT_DAMAGE 
+<<<<<<< HEAD
+<<<<<<< HEAD
+		SET ctime = ${ctime}, stat = '09'  
+=======
 		SET ctime = ${ctime} , stat = '09' 
+>>>>>>> develop
+=======
+		SET ctime = ${ctime}, stat = '09'
+>>>>>>> hotfix
 		WHERE rtime = #{rtime}
 	</update>
 

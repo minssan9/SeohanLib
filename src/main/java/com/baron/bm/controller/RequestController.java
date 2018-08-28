@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.baron.bm.service.BookService;
+import com.baron.bm.service.JoinService;
+import com.baron.bm.service.NotifiService;
+import com.baron.bm.service.RentService;
+import com.baron.bm.service.RequestService;
 import com.baron.member.model.BookModel;
 import com.baron.member.model.CodeModel;
-import com.baron.member.service.BookService;
-import com.baron.member.service.JoinService;
-import com.baron.member.service.NotifiService;
-import com.baron.member.service.RentService;
-import com.baron.member.service.RequestService;
 
 @Controller
 public class RequestController { 

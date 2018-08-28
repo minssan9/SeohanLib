@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.baron.bm.service.NotifiService;
 import com.baron.member.model.SmsModel;
-import com.baron.member.service.NotifiService;
 
 @Controller
 public class NotifyContorller {

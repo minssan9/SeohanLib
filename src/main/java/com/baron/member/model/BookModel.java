@@ -5,6 +5,7 @@ import java.util.Date;
 import org.springframework.web.multipart.MultipartFile;
 
 public class BookModel {
+	private String company;
 	private String book_cd;
 	private String book_cd1;
  
@@ -47,7 +48,13 @@ public class BookModel {
 	private MultipartFile file;
 	private String filename, localpath;
 
-	 
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	} 
 	public String getFilename() {
 		return filename;
 	}

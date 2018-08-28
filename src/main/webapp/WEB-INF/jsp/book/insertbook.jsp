@@ -26,6 +26,7 @@
 					enctype="multipart/form-data" name="insertForm">
 					
 					<input type="hidden" id="type" value="isbn">
+					<input type="hidden" id="company" name="company" value="${sessionScope.company}">
 					
 					<div class="form-group">
 						<label style="width:10%;" for="exampleInputEmail1">ISBN</label> <input style="width:70%; display:-webkit-inline-box;"

@@ -22,12 +22,8 @@
 		WHERE GDATE = #{nowDate} AND GUBN = 'A'
 	</select>
 	
-	<select id="selectItDamage" resultType="ItDamage"> 
-<<<<<<< HEAD
-		SELECT * FROM SITLIB.IT_DAMAGE WHERE stat = '01' order by rtime DESC
-=======
-		SELECT * FROM SITLIB.IT_DAMAGE WHERE  stat = '01' order by rTIME DESC
->>>>>>> develop
+	<select id="selectItDamage" resultType="ItDamage">   
+		SELECT * FROM SITLIB.IT_DAMAGE WHERE stat = '01' order by RTIME DESC 
 	</select>
 	
 	<update id="endDamage" parameterType="ItDamage">
@@ -36,12 +32,8 @@
 		WHERE jtime = #{rtime}
 	</update>		
 	<update id="endDamage2" parameterType="ItDamage">
-		UPDATE SITLIB.IT_DAMAGE 
-<<<<<<< HEAD
-		SET ctime = ${ctime}, stat = '09'  
-=======
-		SET ctime = ${ctime} , stat = '09' 
->>>>>>> develop
+		UPDATE SITLIB.IT_DAMAGE  
+		SET ctime = ${ctime}, stat = '09' 
 		WHERE rtime = #{rtime}
 	</update>
 
