@@ -91,7 +91,7 @@ public class RequestServiceImpl implements RequestService {
 			approval.setId(member.getId());			
 			requestDao.approveChief(approval);
 			
-			model.setReqstatus("3");
+			model.setReqstatus("1");
 		} 
 		requestDao.requestBook(model);
 		

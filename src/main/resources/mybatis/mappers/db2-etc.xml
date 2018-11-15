@@ -28,7 +28,7 @@
 	
 	<update id="endDamage" parameterType="ItDamage">
 		UPDATE SITLIB.IT_MST_HIS2 SET
-		ctime = ${ctime} 
+		ctime = #{ctime} 
 		WHERE jtime = #{rtime}
 	</update>		
 	<update id="endDamage2" parameterType="ItDamage">
