@@ -22,7 +22,7 @@ public class NotifiDaoImpl implements NotifiDao {
 		String smsNo =sms.getPhone();
 		smsNo = smsNo.substring(0, 3)+"-"+smsNo.substring(3, 7)+"-"+smsNo.substring(7, 11);
 		sms.setPhone(smsNo);
-		smsSession.insert(NAMESPACE + "notifiRent", sms);
+//		smsSession.insert(NAMESPACE + "notifiRent", sms);
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class NotifiDaoImpl implements NotifiDao {
 		String smsNo =sms.getPhone();
 		smsNo = smsNo.substring(0, 3)+"-"+smsNo.substring(3, 7)+"-"+smsNo.substring(7, 11);
 		sms.setPhone(smsNo);
-		smsSession.insert(NAMESPACE + "notifiReturn", sms);
+//		smsSession.insert(NAMESPACE + "notifiReturn", sms);
 
 	}
 
@@ -39,7 +39,7 @@ public class NotifiDaoImpl implements NotifiDao {
 		String smsNo =sms.getPhone();
 		smsNo = smsNo.substring(0, 3)+"-"+smsNo.substring(3, 7)+"-"+smsNo.substring(7, 11);
 		sms.setPhone(smsNo);
-		smsSession.insert(NAMESPACE + "notifiReser", sms);
+//		smsSession.insert(NAMESPACE + "notifiReser", sms);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class NotifiDaoImpl implements NotifiDao {
 		String smsNo =sms.getPhone();
 		smsNo = smsNo.substring(0, 3)+"-"+smsNo.substring(3, 7)+"-"+smsNo.substring(7, 11);
 		sms.setPhone(smsNo);
-		smsSession.insert(NAMESPACE + "notifiReq", sms);
+//		smsSession.insert(NAMESPACE + "notifiReq", sms);
 
 	}
 
@@ -56,7 +56,7 @@ public class NotifiDaoImpl implements NotifiDao {
 		String smsNo =sms.getPhone();
 		smsNo = smsNo.substring(0, 3)+"-"+smsNo.substring(3, 7)+"-"+smsNo.substring(7, 11);
 		sms.setPhone(smsNo);
-		smsSession.insert(NAMESPACE + "returnConfirm", sms);
+//		smsSession.insert(NAMESPACE + "returnConfirm", sms);
 		
 	}
 
@@ -65,7 +65,7 @@ public class NotifiDaoImpl implements NotifiDao {
 		String smsNo =sms.getPhone();
 		smsNo = smsNo.substring(0, 3)+"-"+smsNo.substring(3, 7)+"-"+smsNo.substring(7, 11);
 		sms.setPhone(smsNo);
-		smsSession.insert(NAMESPACE + "notifiExtend", sms);
+//		smsSession.insert(NAMESPACE + "notifiExtend", sms);
 		
 	}
 }

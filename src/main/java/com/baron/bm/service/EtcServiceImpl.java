@@ -56,7 +56,7 @@ public class EtcServiceImpl implements EtcService {
 		smsModel.setSendNo("043-530-3174");
 		
 		 etcdao.endDamage(itDamage);
-		 smsdao.sendSms(smsModel);		
+//		 smsdao.sendSms(smsModel);		
 	}
 
 }
